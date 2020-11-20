@@ -1,0 +1,72 @@
+{
+  "id": "e40d0174-9724-44c7-8aef-e7441862ee46",
+  "version": "2.0",
+  "name": "X-Cart",
+  "url": "https://www.x-cart.com/",
+  "tests": [{
+    "id": "95758ff8-7bc0-411a-842f-d576284d341d",
+    "name": "X-Cart",
+    "commands": [{
+      "id": "e261b4ba-781e-4324-b8b9-38499d3c1b3d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.x-cart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cb909ee-aa23-455d-8c5b-56ae7fec556e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af8d4489-e57e-45d8-84f6-9aa7b94c5875",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Get Started",
+      "targets": [
+        ["linkText=Get Started", "linkText"],
+        ["css=.gb-header__btns > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Get Started')]", "xpath:link"],
+        ["xpath=//main[@id='main']/article/header/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.x-cart.com/software-pricing.html')]", "xpath:href"],
+        ["xpath=//header/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Get Started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "739cda66-c315-4f06-9ecf-2a20899f0654",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=How to Start an Online Store",
+      "targets": [
+        ["linkText=How to Start an Online Store", "linkText"],
+        ["css=.footer__col:nth-child(1) > .footer__list:nth-child(4) > li:nth-child(4) > .footer__link", "css:finder"],
+        ["xpath=//a[contains(text(),'How to Start an Online Store')]", "xpath:link"],
+        ["xpath=//footer[@id='section-footer']/div/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.x-cart.com/blog/start-online-store/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'How to Start an Online Store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "012c4d0a-41c6-498b-b18a-fb1efe633181",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1e192f26-5be3-4e89-a90c-9ce08d2002bc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["95758ff8-7bc0-411a-842f-d576284d341d"]
+  }],
+  "urls": ["https://www.x-cart.com/"],
+  "plugins": []
+}

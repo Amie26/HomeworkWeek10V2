@@ -1,0 +1,66 @@
+{
+  "id": "802652e2-1f41-47db-ba95-74453d800a81",
+  "version": "2.0",
+  "name": "Watford council housing",
+  "url": "https://www.wcht.org.uk/",
+  "tests": [{
+    "id": "6d5e2076-e634-403c-a1d8-297e237b6cbd",
+    "name": "WatfordCouncilHousing",
+    "commands": [{
+      "id": "12df11f5-4925-4507-8224-1b1d9cedf4a6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wcht.org.uk/about-us/our-news/say-hello-to-bushey-hall-road!/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eec806f9-0406-4870-8526-772c755f0969",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b76d5bd3-8399-4618-bd3f-e574a5621cef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Your community",
+      "targets": [
+        ["linkText=Your community", "linkText"],
+        ["css=.header__nav-link-object:nth-child(2) .header__nav-area-title", "css:finder"],
+        ["xpath=(//a[contains(text(),'Your community')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/your-community')])[2]", "xpath:href"],
+        ["xpath=//li[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1777345-b6e7-4569-9a21-5c6da9682068",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid-column:nth-child(5) .card__title",
+      "targets": [
+        ["css=.grid-column:nth-child(5) .card__title", "css:finder"],
+        ["xpath=//div[5]/div/a/div/div[2]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Your Gateway')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88b554b5-653f-46f0-9651-db479fc77e0c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8044e108-78f4-4e42-9e17-a69b224c5402",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6d5e2076-e634-403c-a1d8-297e237b6cbd"]
+  }],
+  "urls": ["https://www.wcht.org.uk/"],
+  "plugins": []
+}

@@ -1,0 +1,140 @@
+{
+  "id": "d327f4eb-aacd-4d75-aee4-917e9dd2488f",
+  "version": "2.0",
+  "name": "Barclays",
+  "url": "https://www.barclays.co.uk",
+  "tests": [{
+    "id": "d1814f7c-691e-4632-ac85-d1224e90fea7",
+    "name": "Barclays",
+    "commands": [{
+      "id": "dc2aee1a-6277-41da-ad7c-4ad2547814b6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "086a15ae-e740-4318-abc3-5527b879a8ad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "377b9569-1aee-4395-9959-c3ec49cf31c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bank",
+      "targets": [
+        ["linkText=Bank", "linkText"],
+        ["css=.main-nav > ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bank')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//div[3]/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bank')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9b72e7e-62ed-40d3-914e-1501ce788de1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Bank",
+      "targets": [
+        ["linkText=Bank", "linkText"],
+        ["css=.main-nav > ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bank')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//div[3]/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bank')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc205582-836e-43cb-b752-2a00e4e978a1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Bank",
+      "targets": [
+        ["linkText=Bank", "linkText"],
+        ["css=.main-nav > ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bank')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//div[3]/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bank')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5f888d0-ebda-4c11-bea3-3cee72ff36e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Current accounts",
+      "targets": [
+        ["linkText=Current accounts", "linkText"],
+        ["css=.selected li:nth-child(1) li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Current accounts')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/current-accounts/')]", "xpath:href"],
+        ["xpath=//div/ul/li/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Current accounts')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeb3a56d-4cf5-44f0-b831-0c039f3fa9c0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Insure",
+      "targets": [
+        ["linkText=Insure", "linkText"],
+        ["css=.main-nav > ul > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Insure')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[31]", "xpath:href"],
+        ["xpath=//nav/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Insure')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df6bcf2b-43da-43dd-adda-67dac1998eec",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Insure",
+      "targets": [
+        ["linkText=Insure", "linkText"],
+        ["css=.main-nav > ul > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Insure')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[31]", "xpath:href"],
+        ["xpath=//nav/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Insure')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05b7a135-8ab9-4935-9c9a-09ae64193e82",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Insure",
+      "targets": [
+        ["linkText=Insure", "linkText"],
+        ["css=.main-nav > ul > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Insure')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[31]", "xpath:href"],
+        ["xpath=//nav/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Insure')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39b3fca3-db6e-440f-88bf-651d8d3b4426",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8bcddd12-b269-4b32-9bb4-78c0b105173b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d1814f7c-691e-4632-ac85-d1224e90fea7"]
+  }],
+  "urls": ["https://www.barclays.co.uk/"],
+  "plugins": []
+}

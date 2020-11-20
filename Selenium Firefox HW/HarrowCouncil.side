@@ -1,0 +1,68 @@
+{
+  "id": "44cd469a-ebe8-4bc5-98b4-4c04ad09258f",
+  "version": "2.0",
+  "name": "HarrowCouncil",
+  "url": "https://www.harrow.gov.uk/",
+  "tests": [{
+    "id": "e62bb429-5354-4c1c-9cc1-b6cc85d923fc",
+    "name": "HarrowCouncil",
+    "commands": [{
+      "id": "e1124a3b-ef21-4197-a3b2-da75e558eb00",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.harrow.gov.uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1690eda-43a2-4023-8a33-6268de829f8f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c6243a1-0922-4b64-b53f-545629006185",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-service--parking_transport_roads_1",
+      "targets": [
+        ["css=.icon-service--parking_transport_roads_1", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div/div/div/div/nav/a/span", "xpath:idRelative"],
+        ["xpath=//nav/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5459586c-f8bb-46a0-b938-b53447f109d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pay your Penalty Charge Notice",
+      "targets": [
+        ["linkText=Pay your Penalty Charge Notice", "linkText"],
+        ["css=p > .button", "css:finder"],
+        ["xpath=//a[contains(text(),'Pay your Penalty Charge Notice')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[2]/div/div/p[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wf_paypcn')]", "xpath:href"],
+        ["xpath=//p[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pay your Penalty Charge Notice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0a09dbf-d827-4848-8430-692c19db4f36",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "47262b2c-67d9-47ff-ac11-3e9ee24a24b8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e62bb429-5354-4c1c-9cc1-b6cc85d923fc"]
+  }],
+  "urls": ["https://www.harrow.gov.uk/"],
+  "plugins": []
+}

@@ -1,0 +1,151 @@
+{
+  "id": "d66985db-6d6a-4ac6-885d-fc9689504a76",
+  "version": "2.0",
+  "name": "Nopcom",
+  "url": "https://demo.nopcommerce.com",
+  "tests": [{
+    "id": "1612800d-4bd2-47fa-9d08-363f296e45e5",
+    "name": "Untitled",
+    "commands": [{
+      "id": "6a80b743-5a04-4688-89df-cd42fcfb5619",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82353a14-0f2f-419a-ba47-0de11991db40",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d8e20aa-c6b3-4d05-af1d-d41f9ab16ae2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.ico-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login?returnUrl=%2F')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "797c2e33-8515-4e40-bee6-bed12a52d514",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "-52.5,22"
+    }, {
+      "id": "a78bdde1-f703-4e87-97c0-1fcc123d4eaa",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "-52.5,22"
+    }, {
+      "id": "54b60f13-c812-43b0-b099-e1e932870e54",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "-52.5,22"
+    }, {
+      "id": "bdcfb780-d382-42ae-8bec-313ee5267bf2",
+      "comment": "",
+      "command": "click",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10094a5e-ee51-4f7e-9c88-7120e8c44cc8",
+      "comment": "",
+      "command": "click",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5b01b16-2b6a-4278-9c2b-f19321a211a2",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "minecraft@gmail.com"
+    }, {
+      "id": "2f27fd6a-82d6-4170-b12d-2c0a789e4ea9",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "minecraft123"
+    }, {
+      "id": "96847da2-20ed-4b29-95c4-cba2698dd2bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-button",
+      "targets": [
+        ["css=.login-button", "css:finder"],
+        ["xpath=//input[@value='Log in']", "xpath:attributes"],
+        ["xpath=//form/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5aafeb08-a30a-4e5c-be5c-769e746e69e6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1612800d-4bd2-47fa-9d08-363f296e45e5"]
+  }],
+  "urls": ["https://demo.nopcommerce.com/"],
+  "plugins": []
+}
